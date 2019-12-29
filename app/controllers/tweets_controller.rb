@@ -5,4 +5,13 @@ class TweetsController < ApplicationController
 
   def new
   end
+  def create
+    Tweet.create(title: only[:title],:text only[:text],;image: only[:image])
+  end
+
+
+  private
+  def only
+    params.permit(:title,:text,:image)
+  end
 end
