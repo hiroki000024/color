@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .header {
   height: 150px;
   width: 100%;
@@ -9,11 +12,54 @@
 .h1 {
   font-size: 50px;
   color: white;
-
+  padding-bottom:50px;
 }
-.contents {
-  height: 1000px;
+.button1 {
+  margin-left: 80%;
+  background: #00CCFF;
+  color:white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.button2 {
+  margin-left: 3%;
+  background: #FFCC00;
+  color:white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.content {
+  height: 800px;
   width: 100%;
   background: url(zi-nzu);
   background-size: 100% 100%;
+  padding-top: 50px;
+}
+.contents {
+  height:95%;
+  width: 90%;
+  background: blue;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tweets {
+  height: 30%;
+  width: 24%;
+  background: green;
+  display: block;
+}
+.image {
+  height: 60%;
+  width: 100%;
+  background: yellow;
+}
+.title {
+  height: 40%;
+  width: 100%;
+  background: #00CCFF;
+
 }

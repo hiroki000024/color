@@ -1,0 +1,59 @@
+html {
+  overflow-y:scroll;
+}
+label {
+  color: grey;
+}
+.new_return{
+  margin-left: 70%;
+  font-size: 30px;
+  color: grey;
+}
+.new_content{
+  height: 500px;
+  width: 50%;
+  margin:auto;
+}
+
+.label_title{
+  font-size: 30px;
+  display: block;
+  font-weight:normal;
+}
+.label_text{
+  font-size: 30px;
+  display: block;
+  font-weight:normal;
+}
+.label_image{
+  font-size: 30px;
+  display: block;
+  font-weight:normal;
+}
+.title_form{
+  display: block;
+  width: 50%;
+  height: 10%;
+  margin:auto;
+  margin-top: 5%;
+}
+.text_form{
+  display: block;
+  width: 50%;
+  height: 10%;
+  margin:auto;
+  margin-top: 5%;
+}
+.image_form{
+  display: block;
+  width: 50%;
+  height: 10%;
+  margin:auto;
+  margin-top: 5%;
+}
+.new_submit {
+  display: block;
+  width:20%;
+  margin:auto;
+  margin-top: 10%;
+}
