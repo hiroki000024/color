@@ -4,12 +4,15 @@
 </header>
 <div class="content">
   <div class= "contents">
-    <a href="" class="tweets">
-      <div class="image">
-        <%=       %>
-      </div>
-      <div class="title">
-      </div>
-    </a>
+    <%= @tweets.each do |t|%>
+      <a href="" class="tweets">
+        <div class="image">
+          <%= image_tag(t.image,:size =>"312x182")%>
+        </div>
+        <div class="title">
+          <%= t.title %>
+        </div>
+      </a>
+    <% end %>
   </div>
 </div>

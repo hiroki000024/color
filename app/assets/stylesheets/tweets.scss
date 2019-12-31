@@ -40,7 +40,7 @@ a {
 .contents {
   height:95%;
   width: 90%;
-  background: blue;
+  // background: blue;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -49,17 +49,25 @@ a {
 .tweets {
   height: 30%;
   width: 24%;
-  background: green;
+  // background: green;
   display: block;
+  // border:double;
+  border-color: brown;
+  border-width: 0.5px;
+  filter: drop-shadow(5px 5px 5px rgba(55, 56, 56, 0.6));
 }
 .image {
-  height: 60%;
+  height: 80%;
   width: 100%;
-  background: yellow;
+
+  // background: yellow;
 }
 .title {
-  height: 40%;
+  height: 20%;
   width: 100%;
-  background: #00CCFF;
-
+  background:url(blue);
+  background-size: 100% 100%;
+  color: black;
+  text-align: center;
+  line-height: 50px;
 }
