@@ -4,13 +4,13 @@
   <a href="/" class="new_return"><font face="fantasy">return</a>
   <div class= "new_content">
     <%= form_with url: tweets_path do |f| %>
-      <label for="lable_image" class="label_image"><font face="fantasy">image</font></label>
-    　  <%=f.text_field :title, id:"lable_image",class:"title_form"%>
-    <%# 　<label for="label_text" class="label_text"><font face="fantasy">text</font></label>
-    　  <input type="text" name="text" id="text_form" class="text_form">
+      <label for="lable_title" class="label_title"><font face="fantasy">title</font></label>
+    　  <%=f.text_field :title, id:"lable_title",class:"title_form"%>
     　<label for="lable_image" class="label_image"><font face="fantasy">image</font></label>
-    　  <input type="text" name="image" id="image_form" class="image_form">
-    　<input type ="submit" id="new_submit" value="send" class="new_submit"> %>
+    　  <%=f.text_field :image, id:"lable_image",class:"image_form"%>
+      <label for="lable_title" class="label_text"><font face="fantasy">text</font></label>
+    　  <%=f.text_field :text, id:"lable_text",class:"text_form"%>
+      <input type="submit" class="new_submit" value="send">
     <%end%>
   </div>
 </div>

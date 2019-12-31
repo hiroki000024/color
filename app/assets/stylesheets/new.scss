@@ -33,26 +33,25 @@ label {
 .title_form{
   width: 50%;
   height: 30px;
-  margin:auto;
+  margin-left: 20%;
   margin-top: 5%;
 }
 .text_form{
-  display: block;
   width: 50%;
-  height: 10%;
-  margin:auto;
+  height: 30px;
+  margin-left: 20%;
   margin-top: 5%;
 }
 .image_form{
-  display: block;
   width: 50%;
-  height: 10%;
-  margin:auto;
+  height: 30px;
+  margin-left: 20%;
   margin-top: 5%;
 }
 .new_submit {
-  display: block;
-  width:20%;
-  margin:auto;
+  padding: 20px 80px;
   margin-top: 10%;
+  -webkit-appearance: none;
+  margin-left: 32%;
+  font-size: 30px;
 }

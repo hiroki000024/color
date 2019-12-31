@@ -7,6 +7,7 @@ class TweetsController < ApplicationController
   end
   def create
     Tweet.create(title: only[:title],text: only[:text],image: only[:image])
+    redirect_to :root
   end
 
 
