@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+  # before_action :direct,except: [:index]
   def index
     @tweets = Tweet.all.order("id DESC")
   end
@@ -14,5 +15,8 @@ class TweetsController < ApplicationController
   private
   def only
     params.permit(:title,:text,:image)
+  end
+  def direct
+    redirect_to action: :index
   end
 end
