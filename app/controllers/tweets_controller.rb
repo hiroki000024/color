@@ -1,14 +1,14 @@
 class TweetsController < ApplicationController
-  # before_action :direct,except: [:index]
+  before_action :direct,except: [:index]
   def index
-    @tweets = Tweet.all.order("id DESC")
+    @tweets = Tweet.all.order("id DESC").page(params[:page]).per(12)
   end
 
   def new
   end
   
   def create
-    Tweet.create(title: only[:title],text: only[:text],image: only[:image])
+    Tweet.create(title: only[:title],text: only[:text],image: only[:image],user_id: current_user.id,name: current_user.name)
     redirect_to :root
   end
   private
@@ -16,6 +16,6 @@ class TweetsController < ApplicationController
     params.permit(:title,:text,:image)
   end
   def direct
-    redirect_to action: :index
+    redirect_to action: :index unless user_signed_in?
   end
 end
