@@ -6,7 +6,7 @@
 <div class="content">
   <div class= "contents">
     <% @tweets.each do |t|%>
-      <a href="" class="tweets">
+      <a href="/tweets/<%=t.id%>" class="tweets">
         <div class="image">
           <%= image_tag(t.image,:size =>"312x182")%>
         </div>

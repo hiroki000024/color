@@ -2,12 +2,15 @@ html {
   overflow-y:scroll;
 }
 label {
-  color: grey;
+  color: black;;
 }
 .new_return{
   margin-left: 70%;
   font-size: 30px;
   color: grey;
+  &:hover{
+    color:black;
+  }
 }
 .new_content{
   height: 500px;
@@ -19,6 +22,7 @@ label {
   font-size: 30px;
   display: block;
   font-weight:normal;
+
 }
 .label_text{
   font-size: 30px;
@@ -54,4 +58,11 @@ label {
   -webkit-appearance: none;
   margin-left: 32%;
   font-size: 30px;
+  color: black;
+  font-family: "Yu Gothic";
+  cursor: pointer;
+  &:hover {
+    color:white;
+    background: black;
+  }
 }

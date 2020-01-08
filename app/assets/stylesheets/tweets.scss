@@ -1,41 +1,60 @@
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
 a {
   text-decoration: none;
 }
 .header {
   height: 150px;
   width: 100%;
-  background:url(blue);
+  // background:url(blue);
+  background: black;
   background-size: 100% 100%;
   padding-top: 5px;
   padding-left: 10px;
 }
 .h1 {
+  margin-top: 10px;
   font-size: 50px;
   color: white;
-  padding-bottom:50px;
+  padding-bottom:40px;
+}
+.show-name {
+  color:white;
+  font-size: 45px;
+  margin-left: 75%;
 }
 .button1 {
   margin-left: 80%;
-  background: #00CCFF;
-  color:white;
+  background: white;
+  color:black;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 10px;
+  &:hover {
+    background: silver;
+  }
 }
 .button2 {
   margin-left: 3%;
-  background: #FFCC00;
-  color:white;
+  background: white;
+  color:black;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 10px;
   line-height: 40px;
   text-align: auto;
+  &:hover {
+    background: silver;
+  }
 }
 .content {
   height: 800px;
   width: 100%;
-  background: url(zi-nzu);
+  // background: url(zi-nzu);
+  background: white;
   background-size: 100% 100%;
   padding-top: 50px;
 }
@@ -61,15 +80,73 @@ a {
 .image {
   height: 80%;
   width: 100%;
-
+  position: relative;
   // background: yellow;
+}
+.ppp {
+  position: absolute;
+  top:0;
+  color:white;
 }
 .title {
   height: 20%;
   width: 100%;
-  background:url(blue);
+  // background:url(blue);
+  background: black;
   background-size: 100% 100%;
-  color: black;
+  color: white;
   text-align: center;
   line-height: 50px;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.show_content {
+  height: 585px;
+  width: 100%;
+  // background: url(zi-nzu);
+  // background-size: 100% 100%;
+  background:white;
+  padding-top: 50px;
+  display: flex;
+}
+.show_contents {
+  height:95%;
+  width: 45%;
+  // background: blue;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+.show_image {
+  height: 90%;
+  width: 45%;
+}
+.show_text {
+  height: 6%;
+  width: 100%;
+  color: black;
+  text-align: center;
+  line-height: 80px;
+  font-family: fantasy;
+}
+.comment {
+  height: 86%;
+  width: 45%;
+  background: green;
+  margin-left: 2%;
+
+}
+.h1_comment{
+  width: 100%;
+  height: 10%;
+  background: black;
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  color:white;
+  line-height: 40px;
+}
+.comment-box {
+  width: 100%;
+  height: 90%;
+  background: yellowgreen;
 }

@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
   before_action :direct,except: [:index]
   def index
-    @tweets = Tweet.all.order("id DESC").page(params[:page]).per(12)
+    @tweets = Tweet.includes(:user).order("id DESC").page(params[:page]).per(12)
   end
 
   def new
@@ -10,6 +10,11 @@ class TweetsController < ApplicationController
   def create
     Tweet.create(title: only[:title],text: only[:text],image: only[:image],user_id: current_user.id,name: current_user.name)
     redirect_to :root
+  end
+  def destroy
+  end
+  def show
+    @tweets = Tweet.find(params[:id])
   end
   private
   def only
