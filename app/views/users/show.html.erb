@@ -6,14 +6,18 @@
 <div class="content">
   <div class= "contents">
     <% @tweets.each do |t|%>
-      <a href="/tweets/<%=t.id%>" class="tweets">
-        <div class="image">
-          <%= image_tag(t.image,:size =>"312x182")%>
-        </div>
-        <div class="title">
-          <%= t.title %>
-        </div>
-      </a>
+      <div class= "box">
+        <a href="/tweets/<%=t.id%>" class="my_tweets">
+          <div class="my_image">
+            <%= image_tag(t.image,:size =>"312x182")%>
+          </div>
+          <div class="my_title">
+            <%= t.title %>
+          </div>
+        </a>
+        <%=link_to "編集",root_path,{class:"edit_button"}%>
+        <%=link_to "削除",root_path,{class:"deleate_button"}%>
+      </div>
     <% end %>
   <%= paginate(@tweets)%>
   </div>
