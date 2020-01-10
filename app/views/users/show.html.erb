@@ -16,7 +16,7 @@
           </div>
         </a>
         <%=link_to "編集",root_path,{class:"edit_button"}%>
-        <%=link_to "削除",tweet_path,{method: :delete,class:"deleate_button",id:(t.id)}%>
+        <%=link_to "削除",tweet_path(t.id),{method: :delete,class:"deleate_button"}%>
       </div>
     <% end %>
   <%= paginate(@tweets)%>
