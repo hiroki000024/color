@@ -12,6 +12,10 @@ class TweetsController < ApplicationController
     redirect_to :root
   end
   def destroy
+    @user = current_user
+    tweet = Tweet.find(params[:id])
+    tweet.destroy
+    redirect_to "/users/#{@user.id}"
   end
   def show
     @tweets = Tweet.find(params[:id])
