@@ -15,7 +15,12 @@
     <h1 class="h1_comment">comment</h1>
     <div class="comment-box">
     </div>
-    <input class="">
+    <div class="comment-form-box">
+      <%= form_with url:  tweet_comments_path(@tweets.id) do |f| %>
+        <%=f.text_field :text,class:"comment_text_form"%>
+        <input type="submit" class="comment_submit" value="send">
+      <%end%>
+    </div>
   </div>
 </div>
 <a href="/" class="show_return">return</a>
