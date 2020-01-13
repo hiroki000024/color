@@ -19,6 +19,7 @@ class TweetsController < ApplicationController
   end
   def show
     @tweets = Tweet.find(params[:id])
+    @comments= @tweets.comments.includes(:user).order("id DESC")
   end
   def edit
   end
